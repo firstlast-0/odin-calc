@@ -1,0 +1,16 @@
+body {
+    background-color: #1a1a1a;
+}
+
+div {
+    margin: auto;
+    width: 100px;
+}
+
+#display {
+    background-color: grey;
+    width: 100px;
+    height: 20px;
+    margin-top: 200px;
+    margin-bottom: 10px;
+}
