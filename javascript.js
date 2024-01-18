@@ -31,3 +31,15 @@ function operate(operator, x, y) {
             return divide(x, y);
     }
 }
+
+let display = document.querySelector('#display');
+let buttons = document.querySelector('#buttons');
+buttons.addEventListener('click', function(e) {
+    let button = e.target;
+
+    if (button.textContent == 0 && display.textContent == 0);
+    else if (button.textContent == 'C') display.textContent = 0;    
+    else if (display.textContent == 0) display.textContent = button.textContent;    
+    else display.textContent += button.textContent;
+    
+});

@@ -4,13 +4,20 @@ body {
 
 div {
     margin: auto;
-    width: 100px;
+    width: 500px;
 }
 
 #display {
     background-color: grey;
-    width: 100px;
-    height: 20px;
+    width: 400px;
+    height: 70px;
     margin-top: 200px;
     margin-bottom: 10px;
+    font-size: 60px;
+    text-align: right;
+    padding-right: 5px;
+}
+
+button {
+    padding: 30px;
 }
