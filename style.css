@@ -2,22 +2,48 @@ body {
     background-color: #1a1a1a;
 }
 
-div {
+#calc {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 500px;
     margin: auto;
-    width: 500px;
 }
 
 #display {
     background-color: grey;
-    width: 400px;
     height: 70px;
     margin-top: 200px;
-    margin-bottom: 10px;
     font-size: 60px;
     text-align: right;
-    padding-right: 5px;
+    
+}
+
+#buttons {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex: 1;
 }
 
 button {
-    padding: 30px;
+    flex-grow: 1;
+    flex-basis: 75px;
+    font-size: 20px;
+    background-color: rgb(53, 123, 100);
+    color: white;
+    border: 1px solid black;
+    border-radius: 8%;
+}
+
+#clear {
+    background-color: rgb(150, 33, 33);
+}
+
+.op {
+    background-color: #1784cc;
 }

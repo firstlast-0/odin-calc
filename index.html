@@ -8,12 +8,14 @@
     <title>Calculator</title>
 </head>
 <body>
-    <div id="display">0</div>
-    <div id="buttons">
-        <div><button>7</button><button>8</button><button>9</button><button>+</button></div>
-        <div><button>4</button><button>5</button><button>6</button><button>-</button></div>
-        <div><button>1</button><button>2</button><button>3</button><button>*</button></div>
-        <div><button>0</button><button>C</button><button>=</button><button>/</button></div>
+    <div id="calc">
+        <div id="display">0</div>
+        <div id="buttons">
+            <div class="row"><button>7</button><button>8</button><button>9</button><button class="op">+</button></div>
+            <div class="row"><button>4</button><button>5</button><button>6</button><button class="op">-</button></div>
+            <div class="row"><button>1</button><button>2</button><button>3</button><button class="op">*</button></div>
+            <div class="row"><button>0</button><button id="clear">C</button><button>=</button><button class="op">/</button></div>
+        </div>
     </div>
 </body>
 </html>
