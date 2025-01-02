@@ -16,7 +16,6 @@ body {
     margin-top: 200px;
     font-size: 60px;
     text-align: right;
-    
 }
 
 #buttons {
@@ -38,6 +37,10 @@ button {
     color: white;
     border: 1px solid black;
     border-radius: 8%;
+}
+
+button:disabled {
+    background-color: gray;
 }
 
 #clear {

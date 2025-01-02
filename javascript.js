@@ -39,8 +39,7 @@ function roundOff(n) {
             n = n.toFixed(2);
             return n;
         }
-    }
-    
+    }    
     return n;
 }
 
@@ -79,6 +78,9 @@ buttons.addEventListener('click', function(e) {
         else ;
         
     }
+    else if (button.textContent == 'x') {
+        display.textContent = display.textContent.slice(0, -1);
+    }
     else if (button.textContent == 'C') {
         display.textContent = 0;
         x = null;
@@ -89,6 +91,13 @@ buttons.addEventListener('click', function(e) {
         display.textContent = button.textContent;
         clear = false;
     }
-    else display.textContent += button.textContent;    
-
+    else {
+        if (display.textContent.includes('.') && button.textContent === '.') {} 
+        else display.textContent += button.textContent;
+    }
+    
+    let decimal = document.querySelector('#decimal');
+    if (display.textContent.includes('.')) {        
+        decimal.disabled = true;
+    } else decimal.disabled = false;
 });
