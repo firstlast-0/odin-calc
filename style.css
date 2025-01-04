@@ -1,20 +1,27 @@
 body {
     background-color: #1a1a1a;
+    display: flex;
+    justify-content: center;
 }
 
 #calc {
     display: flex;
     flex-direction: column;
+    gap: 5px;
     width: 400px;
-    height: 500px;
-    margin: auto;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 #display {
-    background-color: grey;
+    border: 2px solid gray;
+    color: white;
+    padding: 0 10px;
     height: 70px;
-    margin-top: 200px;
-    font-size: 60px;
+    font-size: 4rem;
     text-align: right;
 }
 
@@ -22,11 +29,16 @@ body {
     flex: 1;
     display: flex;
     flex-direction: column;
+    /* gap: 4px; */
 }
 
 .row {
     display: flex;
     flex: 1;
+}
+
+.delete > button {
+    background-color: rgb(150, 33, 33);
 }
 
 button {
@@ -35,18 +47,24 @@ button {
     font-size: 20px;
     background-color: rgb(53, 123, 100);
     color: white;
-    border: 1px solid black;
-    border-radius: 8%;
+    border: 2px solid black;
+    transition: transform 100ms;
+}
+
+button:hover {
+    border-color: white;
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.8);
+}
+
+.operator {
+    background-color: #1784cc;
 }
 
 button:disabled {
     background-color: gray;
-}
-
-#clear {
-    background-color: rgb(150, 33, 33);
-}
-
-.op {
-    background-color: #1784cc;
+    cursor: not-allowed;
 }

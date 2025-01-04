@@ -78,8 +78,10 @@ buttons.addEventListener('click', function(e) {
         else ;
         
     }
-    else if (button.textContent == 'x') {
-        display.textContent = display.textContent.slice(0, -1);
+    else if (button.textContent === 'x') {
+        if (display.textContent !== '0') {
+            display.textContent = display.textContent.slice(0, -1);    
+        }        
     }
     else if (button.textContent == 'C') {
         display.textContent = 0;
